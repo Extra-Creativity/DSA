@@ -113,6 +113,7 @@ void rotate4(int* first, int* mid, int* last)
             *lastpos = *currpos;
             lastpos = currpos;
             currpos += k;
+	    //Here we don't use % to be faster.
             if (currpos >= last) currpos = (currpos - last) + Init_first;
         }
         *lastpos = temp;
