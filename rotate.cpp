@@ -39,7 +39,7 @@ void reverse_(int* _Begin, int* _End)
 {
     while (_Begin < _End)
     {
-        iter_swap1(_Begin++, _End--);
+        iter_swap1(_Begin++, --_End);
     }
     return;
 }
